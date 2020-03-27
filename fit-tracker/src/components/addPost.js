@@ -20,6 +20,7 @@ export default class AddPost extends React.Component {
         return(
             <div>
                 <input
+                className="addPost-input"
                 type="text"
                 name="newPost"
                 value={this.state.newPost}

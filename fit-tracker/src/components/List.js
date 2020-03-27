@@ -12,7 +12,7 @@ const mappedPosts = props.posts.map( elem => {
     })
 
     return<div>
-        <h1>Fit-Tracker</h1>
+        <h1 className="App-name">Fit-Tracker</h1>
         {mappedPosts}
     </div>
 }

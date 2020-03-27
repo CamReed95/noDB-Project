@@ -21,6 +21,7 @@ export default class AddPost extends React.Component {
         return(
             <div>
                 <input
+                className="editPost-input"
                 type="text"
                 name="editPost"
                 value={this.state.editPost}

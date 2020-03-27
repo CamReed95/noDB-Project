@@ -1,8 +1,6 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
+
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -26,6 +24,38 @@
 
 .App-link {
   color: #61dafb;
+} */
+
+/* MY STUFF */
+
+.App {
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
 }
+
+/* Dereck's comment: 
+i made classes for whichever objects i wanted to modify and then used .class_name { }
+like .card-selector { background-color: pink }
+wherever the things i wanted to change were, i gave them a classname
+and then i modified all the css in app.css */
+
+.App-name { /* found: src/components/List under header section*/
+
+}
+
+.addPost-input { /* found: src/components/addPost in render*/
+
+}
+
+.deletePost-input { /* found: src/components/deletePost in render*/
+
+}
+
+.editPost-input { /* found: src/components/editPost in render */
+
+}
+
+
 
 
