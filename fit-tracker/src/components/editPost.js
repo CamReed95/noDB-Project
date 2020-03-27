@@ -25,7 +25,7 @@ export default class AddPost extends React.Component {
                 name="editPost"
                 value={this.state.editPost}
                 onChange={(e) => this.changeHandler(e) }
-                placeholder="Edit post"
+                
                 />
                 <button onClick={() => this.props.editPost(this.state.editPost, this.props.id)}>Edit Post</button>
                 
