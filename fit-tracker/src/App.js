@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import axios from 'axios'
 import List from './components/List'
-import AddPost from './components/AddPost'
+import AddPost from './components/Post'
 
 class App extends React.Component {
   constructor () {
