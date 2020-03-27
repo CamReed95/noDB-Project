@@ -11,9 +11,9 @@ app.get('/api/posts', getPosts)
 // POST
 app.post('/api/add_post', addPost)
 // PUT
-app.put('/api/edit_post', editPost)
+app.put('/api/edit_post/:id', editPost)
 //DELETE
-app.delete('/api/delete_post', deletePost)
+app.delete('/api/delete_post/:id', deletePost)
 
 // console.log(posts)
 

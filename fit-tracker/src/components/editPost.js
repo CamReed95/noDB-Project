@@ -1,32 +1,33 @@
-import React from 'react';
+import React from 'react'
 
 export default class AddPost extends React.Component {
     constructor() {
         super();
         this.state = {
-            newPost: ""
+            editPost: ""
         }
         this.changeHandler = this.changeHandler.bind(this)
     }
+    
+
     changeHandler (event) {
         this.setState({
-          newPost: event.target.value
+          editPost: event.target.value
         })
+
       }
-
-
 
     render(){
         return(
             <div>
                 <input
                 type="text"
-                name="newPost"
-                value={this.state.newPost}
+                name="editPost"
+                value={this.state.editPost}
                 onChange={(e) => this.changeHandler(e) }
-                placeholder="Add new post"
+                placeholder="Edit post"
                 />
-                <button onClick={() => this.props.addPost( this.state.newPost )}> Add a New Post </button>
+                <button onClick={() => this.props.editPost(this.state.editPost, this.props.id)}>Edit Post</button>
                 
             </div>
         )

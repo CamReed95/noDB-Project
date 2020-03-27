@@ -1,13 +1,15 @@
 const posts = require('../../src/db.json')
 
+const num = 4
+
 module.exports = {
     getPosts: (req, res, next) => {
         res.status(200).send(posts)
     },
     addPost: (req, res, next) => {
         const newPost = {
-            id: Num,
-            todo: req.body.post
+            id: num,
+            post: req.body.post
         }
         posts.push(newPost)
         num++
