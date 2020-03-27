@@ -1,10 +1,10 @@
 import React from 'react';
 
-export default class AddToDo extends React.Component {
+export default class AddPost extends React.Component {
     constructor() {
         super();
         this.state = {
-            newTodo: ""
+            newPost: ""
         }
     }
 
@@ -13,10 +13,10 @@ export default class AddToDo extends React.Component {
             <div>
                 <input
                 type="text"
-                name="newTodo"
-                value={this.props.newTodo}
+                name="newPost"
+                value={this.props.newPost}
                 onChange={(e) => this.props.changeHandler(e) }
-                placeholder="add new task"
+                placeholder="Add new post"
                 />
                 
             </div>

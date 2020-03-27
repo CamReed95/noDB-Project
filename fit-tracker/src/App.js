@@ -3,14 +3,14 @@ import logo from './logo.svg';
 import './App.css';
 import axios from 'axios'
 import List from './components/List'
-import AddToDo from './components/AddToDo'
+import AddPost from './components/AddPost'
 
 class App extends React.Component {
   constructor () {
     super()
     this.state = {
-      todos: [],
-      newTodo: ''
+      posts: [],
+      newPost: ''
     }
     this.deleteTodo = this.deleteTodo.bind(this)
     this.addToDo = this.addToDo.bind(this)
@@ -18,28 +18,28 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    axios.get('/api/todos').then( res => {
+    axios.get('/api/posts').then( res => {
       this.setState({
-        todos: res.data
+        posts: res.data
       }) 
     })
   }
 
-  deleteTodo(id) {
-    axios.delete(`/api/delete_todo${id}`)
+  deletePost(id) {
+    axios.delete(`/api/delete_post${id}`)
   } 
 
-  addToDo () {
-    axios.post('/api/add_todo', {todo: this.state.newTodo}).then(res => { //this is how to set stuff on the body
+  addPost () {
+    axios.post('/api/add_post', {todo: this.state.newPost}).then(res => { 
       this.setState({
-        todoas: res.data
+        posts: res.data
       })
     })
   }
 
   changeHandler (event) {
     this.setState({
-      newTodo: event.target.value
+      newPost: event.target.value
     })
   }
 
@@ -47,9 +47,9 @@ class App extends React.Component {
     console.log(this.state)
     return (
       <div className="App">
-        <AddToDo newTodo={this.state.newTodo} changeHandler={this.changeHandler} addToDo={this.addToDo}/>
-        <List todos={this.state.todos}/>
-        <button> onClick={this.props.addToDo}</button>
+        <AddPost newTodo={this.state.newPost} changeHandler={this.changeHandler} addPost={this.addPost}/>
+        <List posts={this.state.posts}/>
+        <button> onClick={this.props.addPost}</button>
       </div>
     );
   }
