@@ -27,7 +27,11 @@ class App extends React.Component {
   }
 
   deletePost(id) {
-    axios.delete(`/api/delete_post${id}`)
+    axios.delete(`/api/delete_post/${id}`).then( res => {
+      this.setState({
+        posts: res.data
+      })
+    })
   } 
 
   addPost (newPost) {
@@ -56,7 +60,8 @@ class App extends React.Component {
     return (
       <div className="App">
         <AddPost addPost={this.addPost}/>
-        <List posts={this.state.posts} editPost={this.editPost}/>
+        <List posts={this.state.posts} editPost={this.editPost} deletePost={this.deletePost}/>
+
         
       </div>
     );

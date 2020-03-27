@@ -1,25 +1,15 @@
 import React from 'react';
 
-export default class deletePost extends React.Component {
-   
-
-
-    render() {
-        return(
-            <div>
-                 {/* { name="deletePost"
-                value={this.state.deletePost}
-                onChange={(e) => this.changeHandler(e) } } }
-                 <button onClick={() => this.props.addPost( this.state.newPost )}> Add a New Post </button> 
-                 const {id} = props  */}
+function DeletePost(props) {
+    return(
+        <div>
+            <button onClick={() => props.deletePost(props.id)} className="deletePost-input">Delete Post</button>
     
-                <button onClick={() => props.deletePost(id)} className="deletePost-input">Delete Post</button>
-                
-            </div>
-        )
-    }
-}    
+        </div>
+    )
+}
 
+export default DeletePost;
 
 
 
