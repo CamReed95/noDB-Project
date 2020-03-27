@@ -12,8 +12,8 @@ class App extends React.Component {
       posts: [],
       newPost: ''
     }
-    this.deleteTodo = this.deleteTodo.bind(this)
-    this.addToDo = this.addToDo.bind(this)
+    this.deletePost = this.deletePost.bind(this)
+    this.addPost = this.addPost.bind(this)
     this.changeHandler = this.changeHandler.bind(this)
   }
 
@@ -49,7 +49,7 @@ class App extends React.Component {
       <div className="App">
         <AddPost newTodo={this.state.newPost} changeHandler={this.changeHandler} addPost={this.addPost}/>
         <List posts={this.state.posts}/>
-        <button> onClick={this.props.addPost}</button>
+        <button> Add a New Post {this.props.addPost}</button>
       </div>
     );
   }
