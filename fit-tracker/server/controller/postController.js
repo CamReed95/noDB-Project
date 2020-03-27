@@ -1,4 +1,4 @@
-const posts = require('../../db.json')
+const posts = require('../../src/db.json')
 
 module.exports = {
     getPosts: (req, res, next) => {
@@ -14,8 +14,11 @@ module.exports = {
         res.status(200).send(posts)
     },
     editPost: (req, res, next) => {
-        // write code that will edit a post
-        
+        const index = todos.findIndex((elem) => {
+            return elem.id == req.params.id
+        })
+        posts[index].post = req.body.post
+        res.status(200).send(todos)
     },
     deletePost: (req, res, next) => {
         const index = posts.findIndex ((elem) => {

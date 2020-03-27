@@ -1,14 +1,17 @@
 [
     {
         "id": 1,
-        "post": "Leg day"
+        "post": "Leg day",
+        "completed": false
     },
     {
         "id": 2,
-        "post": "Chest and Abs"
+        "post": "Chest and Abs",
+        "completed": false
     },
     {
         "id": 3,
-        "post": "Back"
+        "post": "Back",
+        "completed": false
     }
 ]

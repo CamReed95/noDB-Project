@@ -17,7 +17,7 @@ app.delete('/api/delete_post', deletePost)
 
 // console.log(posts)
 
-const port = 4733
+const port = 3001
 
 app.listen(port, () => console.log(`listening on port ${port}`))
 
