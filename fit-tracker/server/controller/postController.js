@@ -14,11 +14,11 @@ module.exports = {
         res.status(200).send(posts)
     },
     editPost: (req, res, next) => {
-        const index = todos.findIndex((elem) => {
+        const index = posts.findIndex((elem) => {
             return elem.id == req.params.id
         })
         posts[index].post = req.body.post
-        res.status(200).send(todos)
+        res.status(200).send(posts)
     },
     deletePost: (req, res, next) => {
         const index = posts.findIndex ((elem) => {
