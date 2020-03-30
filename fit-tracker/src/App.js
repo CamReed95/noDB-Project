@@ -4,6 +4,7 @@ import './App.css';
 import axios from 'axios'
 import List from './components/List'
 import AddPost from './components/addPost'
+import background from './media/pic.png'
 
 class App extends React.Component {
   constructor () {
@@ -54,16 +55,19 @@ class App extends React.Component {
    })
 
   }
+
  // FOR CSS STYLING: GET SPACING AND LAYOUT FIRST, THEN DO COLORS AND FONTS
   render(){
-    console.log(this.state)
+    // console.log(this.state)
     return (
       <div className="App">
+        <img src={background} className="body"></img>
+
         <div className="header">
           <h1 className="App-name">Fit-Tracker</h1>
         </div>
 
-        <div className="body-background-img">
+        
 
           <div className="addPost-div">
             <AddPost addPost={this.addPost}/>
@@ -73,9 +77,7 @@ class App extends React.Component {
             <List posts={this.state.posts} editPost={this.editPost} deletePost={this.deletePost}/>
           </div>
 
-        </div>
-
-        <div className="footer"> "Inspirational Quote" </div>
+          <div className="footer"> "Inspirational Quote" </div>
         
       </div>
     );

@@ -52,26 +52,53 @@ and then i modified all the css in app.css */
   padding: 20px;
 }
 
-.body-background-img {
-   background-image: url(https://drive.google.com/drive/u/0/folders/0B6rzoBaFkZFmUWFBMERnQndEX00); ;
-   height: 100vh;
-   width: 100vw;
-}
+.body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+    
+ }
+
+ .addPost-div {
+
+    align-items: center;
+    justify-content: center;
+    width: ;
+    background-color: rgb(39, 56, 82);
+    padding: 5px;
+    color: #FFFFFF;
+    font-weight: bold;
+    border: 1px solid  #DDDDDD;
+    border-radius: 1%;
+ }
+   
+.list-of-posts-div {
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  background-color: rgb(39, 56, 82);
+  padding: 5px;
+  color: #FFFFFF;
+  font-weight: bold;
+  border: 1px solid  #DDDDDD;
+  border-radius: 1%;
+ }
+ 
+
 
 .App-name { /* found: src/components/List under header section*/
   font-size: x-large;
   font-weight: 400;
-  font-style: italic;
+  font-style: normal;
   
   
 }
 
 .addPost-input { /* found: src/components/addPost in render*/
-
-}
-
-.addPost-div {
-
+  font-family: Helvetica;
 }
 
 
@@ -80,10 +107,6 @@ and then i modified all the css in app.css */
 }
 
 .editPost-input { /* found: src/components/editPost in render */
-
-}
-
-.list-of-posts-div {
 
 }
 
