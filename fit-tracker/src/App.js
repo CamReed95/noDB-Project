@@ -54,14 +54,28 @@ class App extends React.Component {
    })
 
   }
-
+ // FOR CSS STYLING: GET SPACING AND LAYOUT FIRST, THEN DO COLORS AND FONTS
   render(){
     console.log(this.state)
     return (
       <div className="App">
-        <AddPost addPost={this.addPost}/>
-        <List posts={this.state.posts} editPost={this.editPost} deletePost={this.deletePost}/>
+        <div className="header">
+          <h1 className="App-name">Fit-Tracker</h1>
+        </div>
 
+        <div className="body-background-img">
+
+          <div className="addPost-div">
+            <AddPost addPost={this.addPost}/>
+          </div>
+
+          <div className="list-of-posts-div">
+            <List posts={this.state.posts} editPost={this.editPost} deletePost={this.deletePost}/>
+          </div>
+
+        </div>
+
+        <div className="footer"> "Inspirational Quote" </div>
         
       </div>
     );

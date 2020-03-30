@@ -26,7 +26,7 @@
   color: #61dafb;
 } */
 
-/* MY STUFF */
+/* MY CSS */
 
 .App {
   text-align: center;
@@ -34,19 +34,46 @@
   height: 100vh;
 }
 
-/* Dereck's comment: 
-i made classes for whichever objects i wanted to modify and then used .class_name { }
+/*
+Make classes for whichever objects i want to modify and then used .class_name { }
 like .card-selector { background-color: pink }
 wherever the things i wanted to change were, i gave them a classname
 and then i modified all the css in app.css */
 
-.App-name { /* found: src/components/List under header section*/
+.header { /* found: app.js render section */
+  background-color: rgb(43, 43, 43);
+  height: 10vh;
+  width: 100vw;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  padding: 20px;
+}
 
+.body-background-img {
+   background-image: url(https://drive.google.com/drive/u/0/folders/0B6rzoBaFkZFmUWFBMERnQndEX00); ;
+   height: 100vh;
+   width: 100vw;
+}
+
+.App-name { /* found: src/components/List under header section*/
+  font-size: x-large;
+  font-weight: 400;
+  font-style: italic;
+  
+  
 }
 
 .addPost-input { /* found: src/components/addPost in render*/
 
 }
+
+.addPost-div {
+
+}
+
 
 .deletePost-input { /* found: src/components/deletePost in render*/
 
@@ -54,6 +81,22 @@ and then i modified all the css in app.css */
 
 .editPost-input { /* found: src/components/editPost in render */
 
+}
+
+.list-of-posts-div {
+
+}
+
+.footer {
+  background-color:  rgb(43, 43, 43);
+  height: 10vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: whitesmoke;
+  font-style: italic;
 }
 
 
