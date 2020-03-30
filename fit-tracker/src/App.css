@@ -26,79 +26,61 @@
   color: #61dafb;
 } */
 
+
+
+
 /* MY CSS */
-
-.App {
-  text-align: center;
-  width: 100vw;
-  height: 100vh;
-}
-
 /*
 Make classes for whichever objects i want to modify and then used .class_name { }
 like .card-selector { background-color: pink }
 wherever the things i wanted to change were, i gave them a classname
 and then i modified all the css in app.css */
 
+.App {
+  margin:0;
+}
+
 .header { /* found: app.js render section */
-  background-color: rgb(43, 43, 43);
-  height: 10vh;
-  width: 100vw;
+   background-color: rgb(43, 43, 43);
   color: whitesmoke;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: left;
-  padding: 20px;
-}
-
-.body {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-    
- }
-
- .addPost-div {
-
-    align-items: center;
-    justify-content: center;
-    width: ;
-    background-color: rgb(39, 56, 82);
-    padding: 5px;
-    color: #FFFFFF;
-    font-weight: bold;
-    border: 1px solid  #DDDDDD;
-    border-radius: 1%;
- }
-   
-.list-of-posts-div {
-  align-items: center;
-  justify-content: center;
-  width: 100vw;
-  background-color: rgb(39, 56, 82);
-  padding: 5px;
-  color: #FFFFFF;
-  font-weight: bold;
-  border: 1px solid  #DDDDDD;
-  border-radius: 1%;
- }
+  padding: 20px; 
+  height: 8vh;
  
-
+}
 
 .App-name { /* found: src/components/List under header section*/
   font-size: x-large;
   font-weight: 400;
   font-style: normal;
-  
-  
 }
+
+ .posts-div {
+  
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(39, 56, 82);
+  padding: 5px;
+  color: rgb(221, 221, 221);
+  font-weight: bold;
+  border: 1px solid  #DDDDDD;
+  border-radius: 1%; 
+  height: 84vh;
+  position: absolute;
+  width:100%; 
+    /* background-image: url(./media/pic.png);
+    background-size: cover;
+    position: relative;  */
+}
+
+
 
 .addPost-input { /* found: src/components/addPost in render*/
   font-family: Helvetica;
+  width: 78vw;
 }
 
 
@@ -107,19 +89,23 @@ and then i modified all the css in app.css */
 }
 
 .editPost-input { /* found: src/components/editPost in render */
-
+  width: 80vw;
 }
 
 .footer {
   background-color:  rgb(43, 43, 43);
-  height: 10vh;
-  width: 100vw;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   color: whitesmoke;
   font-style: italic;
+  vertical-align: bottom; 
+  height: 8vh;
+  position: absolute;
+  bottom: 0;
+  width:100%;
+  
 }
 
 

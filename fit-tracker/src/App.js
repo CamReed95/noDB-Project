@@ -4,7 +4,7 @@ import './App.css';
 import axios from 'axios'
 import List from './components/List'
 import AddPost from './components/addPost'
-import background from './media/pic.png'
+// import Background from './media/pic.png'
 
 class App extends React.Component {
   constructor () {
@@ -61,7 +61,7 @@ class App extends React.Component {
     // console.log(this.state)
     return (
       <div className="App">
-        <img src={background} className="body"></img>
+        {/* <img src={background} className="body"></img> */}
 
         <div className="header">
           <h1 className="App-name">Fit-Tracker</h1>
@@ -69,15 +69,13 @@ class App extends React.Component {
 
         
 
-          <div className="addPost-div">
+          <div className="posts-div">
             <AddPost addPost={this.addPost}/>
-          </div>
 
-          <div className="list-of-posts-div">
             <List posts={this.state.posts} editPost={this.editPost} deletePost={this.deletePost}/>
           </div>
 
-          <div className="footer"> "Inspirational Quote" </div>
+          <div className="footer"> "The only easy day was yesterday" </div>
         
       </div>
     );
