@@ -37,11 +37,13 @@ wherever the things i wanted to change were, i gave them a classname
 and then i modified all the css in app.css */
 
 .App {
-  margin:0;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
 }
 
 .header { /* found: app.js render section */
-   background-color: rgb(43, 43, 43);
+  background-color: rgb(43, 43, 43);
   color: whitesmoke;
   display: flex;
   flex-direction: row;
@@ -53,35 +55,37 @@ and then i modified all the css in app.css */
 }
 
 .App-name { /* found: src/components/List under header section*/
-  font-size: x-large;
+  font-size: xx-large;
   font-weight: 400;
   font-style: normal;
 }
 
  .posts-div {
+   background-color: rgb(39, 56, 82);
+   padding: 5px;
+   color: rgb(221, 221, 221);
+   font-weight: 600;
+   border: 1px solid  #DDDDDD;
+   border-radius: 1%; 
+   height: 84vh;
+   /* position: absolute; */
+   /* width:100vw;  */
+   /* display: flex; */
+   /* flex-direction: column; */
+   align-items: column;
+   justify-content: center;
+     /* background-image: url(./media/pic.png);
+     background-size: 100% 100%;
+     position: relative;  */
+ }
   
-  align-items: center;
-  justify-content: center;
-  /* background-color: rgb(39, 56, 82); */
   
-  padding: 5px;
-  color: rgb(221, 221, 221);
-  font-weight: bold;
-  border: 1px solid  #DDDDDD;
-  border-radius: 1%; 
-  height: 84vh;
-  position: absolute;
-  width:100%; 
-    background-image: url(./media/pic.jpg);
-    background-size: 100% 100%;
-    position: relative; 
-}
 
 
 
 .addPost-input { /* found: src/components/addPost in render*/
   font-family: Helvetica;
-  width: 80vw;
+  
 }
 
 
@@ -90,7 +94,9 @@ and then i modified all the css in app.css */
 }
 
 .editPost-input { /* found: src/components/editPost in render */
-  width: 80vw;
+  /* width: 80vw; */
+  /* justify-content: center;
+  align-items: center; */
 }
 
 .footer {
