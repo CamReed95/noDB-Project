@@ -62,7 +62,8 @@ and then i modified all the css in app.css */
   
   align-items: center;
   justify-content: center;
-  background-color: rgb(39, 56, 82);
+  /* background-color: rgb(39, 56, 82); */
+  
   padding: 5px;
   color: rgb(221, 221, 221);
   font-weight: bold;
@@ -71,16 +72,16 @@ and then i modified all the css in app.css */
   height: 84vh;
   position: absolute;
   width:100%; 
-    /* background-image: url(./media/pic.png);
-    background-size: cover;
-    position: relative;  */
+    background-image: url(./media/pic.jpg);
+    background-size: 100% 100%;
+    position: relative; 
 }
 
 
 
 .addPost-input { /* found: src/components/addPost in render*/
   font-family: Helvetica;
-  width: 78vw;
+  width: 80vw;
 }
 
 
@@ -105,7 +106,6 @@ and then i modified all the css in app.css */
   position: absolute;
   bottom: 0;
   width:100%;
-  
 }
 
 

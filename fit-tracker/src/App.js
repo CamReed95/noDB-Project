@@ -4,7 +4,7 @@ import './App.css';
 import axios from 'axios'
 import List from './components/List'
 import AddPost from './components/addPost'
-// import Background from './media/pic.png'
+import background from './media/pic.png'
 
 class App extends React.Component {
   constructor () {
